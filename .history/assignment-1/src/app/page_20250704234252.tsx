@@ -21,11 +21,11 @@ export default function Home() {
       <div className="w-full max-w-md space-y-4">
         <h1 className="text-3xl font-bold text-center">Quote Generator</h1>
         <Input
-          placeholder="Tell your problem in one word and we'll motivate you (e.g. success)"
+          placeholder="Enter a topic (e.g. success)"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
-        <Button onClick={handleSubmit}>Inspire Me</Button>
+        <Button onClick={handleSubmit}>Get Quotes</Button>
         <div className="mt-4 space-y-2">
           {results.map((quote, idx) => (
             <div key={idx} className="p-4 bg-base-200 rounded shadow">

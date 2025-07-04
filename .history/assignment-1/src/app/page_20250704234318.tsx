@@ -25,7 +25,7 @@ export default function Home() {
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
-        <Button onClick={handleSubmit}>Inspire Me</Button>
+        <Button onClick={handleSubmit}>Get Quotes</Button>
         <div className="mt-4 space-y-2">
           {results.map((quote, idx) => (
             <div key={idx} className="p-4 bg-base-200 rounded shadow">
