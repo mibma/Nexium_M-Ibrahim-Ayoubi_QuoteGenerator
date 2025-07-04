@@ -19,21 +19,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6">
       <div className="w-full max-w-md space-y-4">
-        <h1 className="text-5xl font-extrabold text-center mb-6">Quote Generator</h1>
+        <h1 className="text-3xl font-bold text-center">Quote Generator</h1>
         <Input
-          className="h-16 text-lg px-6 py-4"
           placeholder="Tell your problem in one word and we'll motivate you (e.g. success)"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
-        <div className="flex justify-center items-center my-6">
-          <Button className="w-2/3 h-14 text-xl" onClick={handleSubmit}>Inspire Me</Button>
-        </div>
-        <div className="mt-4 space-y-6">
+        <Button onClick={handleSubmit}>Inspre Me</Button>
+        <div className="mt-4 space-y-2">
           {results.map((quote, idx) => (
-            <div key={idx} className="relative bg-white text-gray-900 rounded-xl shadow-lg px-8 py-8 flex flex-col items-center min-h-[120px]">
-              <span className="absolute left-4 top-2 text-5xl text-gray-300 select-none leading-none">“</span>
-              <span className="w-full text-center text-lg font-medium z-10">{quote}</span>
+            <div key={idx} className="p-4 bg-base-200 rounded shadow">
+              {quote}
             </div>
           ))}
         </div>

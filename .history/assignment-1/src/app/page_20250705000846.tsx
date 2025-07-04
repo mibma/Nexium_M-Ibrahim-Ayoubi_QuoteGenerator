@@ -29,11 +29,10 @@ export default function Home() {
         <div className="flex justify-center items-center my-6">
           <Button className="w-2/3 h-14 text-xl" onClick={handleSubmit}>Inspire Me</Button>
         </div>
-        <div className="mt-4 space-y-6">
+        <div className="mt-4 space-y-2">
           {results.map((quote, idx) => (
-            <div key={idx} className="relative bg-white text-gray-900 rounded-xl shadow-lg px-8 py-8 flex flex-col items-center min-h-[120px]">
-              <span className="absolute left-4 top-2 text-5xl text-gray-300 select-none leading-none">“</span>
-              <span className="w-full text-center text-lg font-medium z-10">{quote}</span>
+            <div key={idx} className="p-4 bg-base-200 rounded shadow">
+              {quote}
             </div>
           ))}
         </div>

@@ -146,7 +146,7 @@ h1 {
 }
 
 input[type="text"], .input, input {
-  width: 120%;
+  width: 200%;
   padding: 1.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 0.5rem;
