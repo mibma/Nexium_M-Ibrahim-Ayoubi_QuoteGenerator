@@ -93,5 +93,5 @@ export async function POST(req: NextRequest) {
 
   } catch (error: unknown) {
     console.error('Error in route.ts:', error instanceof Error ? error.message : error);
-  }  
+  
 }
